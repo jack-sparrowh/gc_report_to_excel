@@ -47,11 +47,10 @@ def file_number_to_loc(file_number):
 ######################################### MAIN CODE ###########################################
 # get groupped and name of final excel file
 groupped = True
-excel_name = 'GC-MS.xlsx'
-excel_path = r'path_to_files'
+excel_path = 'path_to_files' # <--- xlsx by default
 
 # define path and create an array of file names
-main_path = r'path_to_files'
+main_path = 'path_to_files'
 files = os.listdir(main_path)
 
 # flatten the array to 1d
@@ -75,7 +74,7 @@ for num in number_files:
         dict_files[num] = files_to_dict
 
 # save to excel file, every group of files to given sheet
-with pd.ExcelWriter(excel_path + '\\' + excel_name, mode="w", engine="openpyxl", if_sheet_exists='new') as writer:
+with pd.ExcelWriter(excel_path, mode="w", engine="openpyxl", if_sheet_exists='new') as writer:
     
     for file_number in dict_files.keys():
         
