@@ -83,12 +83,11 @@ with pd.ExcelWriter(excel_path, mode="w", engine="openpyxl", if_sheet_exists='ne
         
         for file_loc in file_number_to_loc(file_number):
             
-            # append new entries to the df
-            tmp_df = tmp_df.append(
+            # append new entries to the df          
+            tmp_df = pd.concat(
+                tmp_df,
                 make_table(
-                    extract_text(
-                        file_loc
-                    )
+                    extract_text(file_loc)
                 )
             )
             
