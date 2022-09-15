@@ -5,7 +5,7 @@ Code that takes GC_reports from GC-MS where i work and combines files with the s
 "
 Data File file_path
 Sample Name: 265.17 (2)
-
+\
 =====================================================================
 Acq. Operator   : ###                             Seq. Line :   8
 Acq. Instrument : Instrument 1                    Location : Vial 107
