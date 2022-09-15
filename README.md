@@ -1,6 +1,7 @@
 # gc_report_to_excel
 Code that takes GC_reports from GC-MS where i work and combines files with the same name, aggregates them and saves as the sheet in excel. Below is an example of a pdf file that is being converted while running this code.
 
+\
 "
 Data File file_path
 Sample Name: 265.17 (2)
